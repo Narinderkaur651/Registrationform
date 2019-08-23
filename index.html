@@ -1,0 +1,87 @@
+<DOCTYPE html>
+  <html>
+
+  <head>
+    <title>
+      Registration form
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="validation.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container overlay d-flex justify-content-center  mt-lg-4 pt-lg-4 pb-lg-4 " id="form-div">
+      <!--form-->
+
+      <form class="pl-3  text-white  pr-3 pb-lg-4 pb-1" id="validates">
+        <h2 class="text-warning mb-1">Register-Yourself</h2>
+        <p class="">Fields marked with <span class="star">*</span> are mandatory</p>
+        <div class="form-group ">
+          <input type="text" class="form-control  text-white" placeholder="* First-Name " name="First_Name">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control text-white" placeholder="* Last-Name" name="Last_Name">
+        </div>
+
+        <div class="form-group">
+          <input type="email" class="form-control text-white" placeholder="* Email" name="Email">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control text-white" name="dob" placeholder="* Date" id="datepicker">
+        </div>
+
+        <div class="form-group">
+          <select class="form-control mb-2 text-white">
+            <option class="text-dark" selected="selected">Select-city</option>
+            <option class="text-dark">Moga</option>
+            <option class="text-dark">Ptiala</option>
+            <option class="text-dark">Jalandhar</option>
+          </select>
+        </div>
+        <span class="mr-3">Gender :</span>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" value="" name="Gender">Female
+          </label>
+        </div>
+        <div class="form-check-inline mb-2">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" value="" name="Gender">Male
+          </label>
+        </div><br>
+        <div class="form-group">
+          <select class="form-control mb-2 text-white" id="users_list" name="qualification">
+            <option class="text-dark" selected="selected">Select-Course</option>
+            <option class="text-dark" value="B.TECH">B.TECH</option>
+            <option class="text-dark" value="BCA">BCA</option>
+            <option class="text-dark" value="B.ED">B.ED</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control text-white" rows="3" placeholder="* Address" id="Address"
+            name="address"></textarea>
+        </div>
+
+        <input type="file" class="form-control-file border mt-3">
+        <br>
+        <button type="button" class="btn btn-outline-warning btn-block">Submit</button>
+      </form>
+    </div>
+
+  </body>
+
+  </html>
